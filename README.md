@@ -26,5 +26,6 @@
 ### •On the next window, select"other" option.
 ![other](images/other.jpg)
 
-### •On the next window, select "Buisness" option.
+### •On the next window, select "Buisness" option. Then give a name to your app and click "create app".
 ![buisness](images/buisness.jpg)
+
