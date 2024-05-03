@@ -16,3 +16,6 @@ Get Google Gemini AI On Whtasapp
 ### •Click "login" and login using your Facebook account 
 ![meta_login1](images/meta_login1.jpg)
 ![meta_login2](images/meta_login2.jpg)
+
+### •After login, the login button become "Get started" button. Click on that and create a developer account.
+
