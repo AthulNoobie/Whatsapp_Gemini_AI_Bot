@@ -24,7 +24,7 @@
 ### •After creating a developer account, Click "Create app"
 ![create app](images/create_app.jpg)
 
-### •On the next window, select"other" option.
+### •On the next window, select "other" option.
 ![other](images/other.jpg)
 
 ### •On the next window, select "Buisness" option. Then give a name to your app and click "create app".
