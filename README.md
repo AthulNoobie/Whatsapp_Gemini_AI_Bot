@@ -7,7 +7,7 @@
 #### 1)Get Whatsapp cloud api key
 #### 2)Get Gemini api key
 #### 3)Fork this repo to your account
-#### 4)Put both api keys in your main.py code
+#### 4)Put both api keys in the 'main.py' code
 
 
 ## Step-1 Get Whatsapp api key
