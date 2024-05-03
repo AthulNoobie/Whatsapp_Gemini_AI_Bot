@@ -23,3 +23,6 @@
 ### •After creating a developer account, Click "Create app"
 ![create app](images/create_app.jpg)
 
+### •On the next window, select"other" option.
+![other](images/other.jpg)
+
