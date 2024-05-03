@@ -17,7 +17,7 @@ Get Google Gemini AI On Whtasapp
 ![meta_login1](images/meta_login1.jpg)
 ![meta_login2](images/meta_login2.jpg)
 
-### •After login, the login button become "Get started" button. Click on that and register for a developer account.
+### •When logged in, the login button become "Get started" button. Click on that and register for a developer account.
 
 ### •After creating a developer account, Click "Create app"
 ![create app](images/create_app.jpg)
