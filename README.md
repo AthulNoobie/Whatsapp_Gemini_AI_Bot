@@ -6,3 +6,6 @@ Get Google Gemini AI On Whtasapp
 ### 1)Get Whatsapp cloud api key
 ### 2)Get Gemini api key
 ### 3)Put it in the main.py code
+
+
+## Step-1 Get Whatsapp api key
