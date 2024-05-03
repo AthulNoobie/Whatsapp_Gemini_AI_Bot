@@ -1,12 +1,12 @@
 # Whatsapp_Gemini_Bot
 **Get Google Gemini AI On Whtasapp, without port forwarding. An always online whatsapp bot by creating a flask server on vercel.**
 
-## Only 3 Simple Steps:
+## Only 4 Simple Steps:
 
 #### 1)Get Whatsapp cloud api key
 #### 2)Get Gemini api key
 #### 3)Fork this repo to your account
-#### 3)Put both api keys in your main.py code
+#### 4)Put both api keys in your main.py code
 
 
 ## Step-1 Get Whatsapp api key
