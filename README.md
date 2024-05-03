@@ -26,3 +26,5 @@
 ### •On the next window, select"other" option.
 ![other](images/other.jpg)
 
+### •On the next window, select "Buisness" option.
+![buisness](images/buisness.jpg)
