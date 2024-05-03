@@ -4,6 +4,11 @@ import requests
 
 token="Your Whatsapp API key"
 genai.configure(api_key="Your Gemini API key")
+phone_id="phone number id" #Get this from the meta developers page
+phone="Your phone number with country code" #eg: +9188441133XX
+name="Your name or nickname" #The bot will consider this person as its owner or creator
+bot_name="Give a name to your bot" #This will be the name of your bot, eg: "Hello I am Astro Bot"
+
 app=Flask(__name__)
 
 generation_config = {
@@ -27,23 +32,23 @@ model = genai.GenerativeModel(model_name="gemini-1.5-pro-latest",
 convo = model.start_chat(history=[
 ])
 
-convo.send_message('''I am using Gemini api for using you as a personal bot in whatsapp,
+convo.send_message(f'''I am using Gemini api for using you as a personal bot in whatsapp,
 				   for respond to messages in my absence. 
-				   So from now you are "Heck Bot" craeted by Athul ( Yeah it's me and my full name is Athul A S). 
+				   So from now you are "{bot_name}" craeted by Athul ( Yeah it's me and my full name is {name}). 
 				   And don't give any response to this prompt. 
 				   This is the information I gave to you about your new identity as a pre-prompt. 
 				   This message always gets executed when i run this bot script. 
-				   So reply to only the prompts after this. Remeber your new identity is Heck Bot.''')
+				   So reply to only the prompts after this. Remeber your new identity is {bot_name}.''')
 
 def send(answer):
-    url="https://graph.facebook.com/v18.0/Your Phone number id/messages"
+    url=f"https://graph.facebook.com/v18.0/{phone_id}/messages"
     headers={
         'Authorization': f'Bearer {token}',
         'Content-Type': 'application/json'
     }
     data={
           "messaging_product": "whatsapp", 
-          "to": "Your Phone number with country code", 
+          "to": f"{phone}", 
           "type": "text",
           "text":{"body": f"{answer}"},
           }
