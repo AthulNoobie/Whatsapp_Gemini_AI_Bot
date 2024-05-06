@@ -25,7 +25,7 @@ safety_settings = [
   {"category": "HARM_CATEGORY_DANGEROUS_CONTENT","threshold": "BLOCK_MEDIUM_AND_ABOVE"},
 ]
 
-model = genai.GenerativeModel(model_name="gemini-1.5-pro-latest",
+model = genai.GenerativeModel(model_name="gemini-1.0-pro",
                               generation_config=generation_config,
                               safety_settings=safety_settings)
 
@@ -33,8 +33,8 @@ convo = model.start_chat(history=[
 ])
 
 convo.send_message(f'''I am using Gemini api for using you as a personal bot in whatsapp,
-				   for respond to messages in my absence. 
-				   So from now you are "{bot_name}" craeted by {name} ( Yeah it's me, my name is {name}). 
+				   to assist me in various tasks. 
+				   So from now you are "{bot_name}" created by {name} ( Yeah it's me, my name is {name}). 
 				   And don't give any response to this prompt. 
 				   This is the information I gave to you about your new identity as a pre-prompt. 
 				   This message always gets executed when i run this bot script. 
