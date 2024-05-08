@@ -6,8 +6,4 @@
 
 ## Only 5 Simple Steps:
 
-#### 1)Get Whatsapp cloud api key
-#### 2)Get Gemini api key
-#### 3)Fork this repo to your account
-#### 4)Put both api keys in the 'main.py' code
-#### 5)Link your repo to Vercel, so your bot becomes online
+## Complete tutorial coming soon
