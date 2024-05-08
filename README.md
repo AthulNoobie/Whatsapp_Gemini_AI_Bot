@@ -4,6 +4,4 @@
 
 ![working](images/Screenshot_2024-05-07-17-17-07-249_com.whatsapp.jpg)
 
-## Only 5 Simple Steps:
-
 ## Complete tutorial coming soon
