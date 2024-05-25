@@ -1,6 +1,7 @@
 import google.generativeai as genai
 from flask import Flask,request,jsonify
 import requests
+import os
 
 token="Your Whatsapp API key"
 genai.configure(api_key="Your Gemini API key")
@@ -56,6 +57,12 @@ def send(answer):
     response=requests.post(url, headers=headers,json=data)
     return response
 
+def remove(*file_paths):
+    for file in file_paths:
+        if os.path.exists(file):
+            os.remove(file)
+        else:pass
+
 @app.route("/",methods=["GET","POST"])
 def index():
     return "Bot"
@@ -84,15 +91,17 @@ def webhook():
                 media_url = media_response.json()["url"]
                 media_download_response = requests.get(media_url, headers=headers)
                 if data["type"] == "audio":
-                    filename = "/tmp/temp_audio.ogg"
+                    filename = "/tmp/temp_audio.mp3"
                 elif data["type"] == "image":
                     filename = "/tmp/temp_image.jpg"
                 with open(filename, "wb") as temp_media:
                     temp_media.write(media_download_response.content)
                 file = genai.upload_file(path=filename, display_name="temp_file")
                 response = bot.generate_content(["If it's an image,explain the content in the image, if it's an audio reply suitably", file])
+		remove("/tmp/temp_audio.mp3","/tmp/temp_image.jpg")
                 send(response._result.candidates[0].content.parts[0].text)
         except :pass
         return jsonify({"status": "ok"}), 200
+	    
 if __name__=="__main__":
     app.run(debug=True, port=8000)
