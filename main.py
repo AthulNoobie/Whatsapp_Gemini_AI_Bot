@@ -62,19 +62,37 @@ def index():
 
 @app.route("/webhook",methods=["GET","POST"])
 def webhook():
-    if request.method=="GET":
-        mode=request.args.get("hub.mode")
-        token=request.args.get("hub.verify_token")
-        challenge=request.args.get("hub.challenge")
-        if mode=="subscribe" and token == "BOT":
-            return challenge,200
-        else:return "Failed",403
-    elif request.method=="POST":
+    if request.method == "GET":
+        mode = request.args.get("hub.mode")
+        token = request.args.get("hub.verify_token")
+        challenge = request.args.get("hub.challenge")
+        if mode == "subscribe" and token == "BOT":
+            return challenge, 200
+        else:
+            return "Failed", 403
+    elif request.method == "POST":
         try:
-            prompt=request.get_json()["entry"][0]["changes"][0]["value"]["messages"][0]["text"]["body"]
-            convo.send_message(prompt)
-            send(convo.last.text)
-        except KeyError:pass
+            data = request.get_json()["entry"][0]["changes"][0]["value"]["messages"][0]
+            if data["type"] == "text":
+                prompt = data["text"]["body"]
+                convo.send_message(prompt)
+                send(convo.last.text)
+            else:
+                media_url_endpoint = f'https://graph.facebook.com/v18.0/{data[data["type"]]["id"]}/'
+                headers = {'Authorization': f'Bearer {wa_token}'}
+                media_response = requests.get(media_url_endpoint, headers=headers)
+                media_url = media_response.json()["url"]
+                media_download_response = requests.get(media_url, headers=headers)
+                if data["type"] == "audio":
+                    filename = "/tmp/temp_audio.ogg"
+                elif data["type"] == "image":
+                    filename = "/tmp/temp_image.jpg"
+                with open(filename, "wb") as temp_media:
+                    temp_media.write(media_download_response.content)
+                file = genai.upload_file(path=filename, display_name="temp_file")
+                response = bot.generate_content(["If it's an image,explain the content in the image, if it's an audio reply suitably", file])
+                send(response._result.candidates[0].content.parts[0].text)
+        except :pass
         return jsonify({"status": "ok"}), 200
 if __name__=="__main__":
     app.run(debug=True, port=8000)
