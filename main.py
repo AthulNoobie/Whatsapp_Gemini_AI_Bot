@@ -3,7 +3,7 @@ from flask import Flask,request,jsonify
 import requests
 import os
 
-token="Your Whatsapp API key"
+token="Your Whatsapp API key" #Get it from 'meta for developers' page
 genai.configure(api_key="Your Gemini API key")
 phone_id="phone number id" #Get this from the meta developers page
 phone="Your phone number with country code" #eg: +9188441133XX
