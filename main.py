@@ -85,7 +85,7 @@ def webhook():
                 convo.send_message(prompt)
                 send(convo.last.text)
             else:
-                media_url_endpoint = f'https://graph.facebook.com/v18.0/{data[data["type"]]["id"]}/'
+                media_url_endpoint = f"https://graph.facebook.com/v18.0/{data[data["type"]]["id"]}/"
                 headers = {'Authorization': f'Bearer {wa_token}'}
                 media_response = requests.get(media_url_endpoint, headers=headers)
                 media_url = media_response.json()["url"]
