@@ -97,7 +97,7 @@ def webhook():
                 with open(filename, "wb") as temp_media:
                     temp_media.write(media_download_response.content)
                 file = genai.upload_file(path=filename, display_name="temp_file")
-                response = bot.generate_content(["If it's an image,explain the content in the image, if it's an audio reply suitably", file])
+                response = model.generate_content(["If it's an image,explain the content in the image, if it's an audio reply suitably", file])
 		remove("/tmp/temp_audio.mp3","/tmp/temp_image.jpg")
                 send(response._result.candidates[0].content.parts[0].text)
         except :pass
