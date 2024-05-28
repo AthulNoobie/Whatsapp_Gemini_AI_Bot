@@ -8,3 +8,8 @@
 ## I have exams, so please wait😊
 
 ![working2](images/Screenshot_2024-05-25-22-02-01-088_com.whatsapp.jpg)
+## 👆Bot can respond to image and audio
+
+![working3](images/Screenshot_20240528_224908_WhatsApp.jpg)
+
+## Bot can respond to pdf also.
