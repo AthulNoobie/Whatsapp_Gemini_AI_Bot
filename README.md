@@ -2,12 +2,13 @@
 ## Under development
 **Get Google Gemini AI On WhatsApp, without port forwarding. An always online WhatsApp bot by creating a flask server on Vercel.**
 
-## The complete Video tutorial will be available today or tomorrow. Stay tuned.
+## Complete tutorial video:
+
+[![Watch the video](https://img.youtube.com/vi/zT0YTfizzxM/0.jpg)](https://youtu.be/zT0YTfizzxM)
+
 
 ![working](images/Screenshot_2024-05-07-17-17-07-249_com.whatsapp.jpg)
 
-## Complete tutorial coming soon
-## I have exams, so please wait😊
 
 ![working2](images/Screenshot_2024-05-25-22-02-01-088_com.whatsapp.jpg)
 ## 👆Bot can respond to image and audio
