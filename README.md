@@ -9,7 +9,7 @@
 
 Image Example
 
-<img src="images/Screenshot_2024-05-07-17-17-07-249_com.whatsapp.jpg" alt="working1" width="300" height=7500>
+<img src="images/Screenshot_2024-05-07-17-17-07-249_com.whatsapp.jpg" alt="working1" width="300" height=750>
 
 <img src ="images/Screenshot_2024-05-25-22-02-01-088_com.whatsapp.jpg" alt="working2"  width="300" height=750>
 
