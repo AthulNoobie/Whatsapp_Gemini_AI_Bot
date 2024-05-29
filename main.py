@@ -4,9 +4,6 @@ import requests
 import os
 import fitz
 
-# Kindly wait, A complete video tutorial for the bot's setup is coming soon
-# I have university exams, so please wait
-
 wa_token=os.environ.get("WA_TOKEN")
 genai.configure(api_key=os.environ.get("GEN_API"))
 phone_id=os.environ.get("PHONE_ID")
