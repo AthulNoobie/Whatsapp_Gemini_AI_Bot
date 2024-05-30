@@ -19,6 +19,3 @@
 <img src="images/Screenshot_20240528_224908_WhatsApp.jpg" alt="working3"  width="300" height=750>
 
 ## Bot can respond to pdf also.
-
-
-Inspired by [@daveebbelaar](https://github.com/daveebbelaar)
