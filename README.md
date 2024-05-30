@@ -21,4 +21,4 @@
 ## Bot can respond to pdf also.
 
 
-Inspired by [@daveebbelaar](www.github.com/@daveebbelaar)
+Inspired by [@daveebbelaar](https://github.com/daveebbelaar)
