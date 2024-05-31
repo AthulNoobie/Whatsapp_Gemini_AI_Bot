@@ -1,9 +1,9 @@
-### Step 1 - Get WhatsApp API Key,Phone_id
-### Step 2 - Get Gemini API Key
+#### Step 1 - Get WhatsApp API Key,Phone_id
+#### Step 2 - Get Gemini API Key
 ### Step 3 - Fork this repo and edit main.py according to your need.
-### Step 4 - Connet the forked repo to vercel.com and deploy it by adding the API Keys as environment variables.
-### Step 5 - Copy your deployment link and paste it in the WhatsApp webhook field in the format www.your_link.com/webhook (type the webhook manually).
-Then add the Verification token as "BOT".
+#### Step 4 - Connet the forked repo to vercel.com and deploy it by adding the API Keys as environment variables.
+#### Step 5 - Copy your deployment link and paste it in the WhatsApp webhook field in the format www.your_link.com/webhook (type the webhook manually).
+#### Then add the Verification token as "BOT".
 
 ### Follow the video tutorial if you have any doubt 🤩👇
 
