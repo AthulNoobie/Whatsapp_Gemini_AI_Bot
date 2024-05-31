@@ -1,3 +1,6 @@
+
+#### Please give a ⭐ if you like it.
+
 #### Step 1 - Get WhatsApp API Key,Phone_id
 #### Step 2 - Get Gemini API Key
 #### Step 3 - Fork this repo and edit main.py according to your need.
