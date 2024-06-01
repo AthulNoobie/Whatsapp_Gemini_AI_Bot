@@ -1,7 +1,7 @@
 
 #### Please give a ⭐ if you like it.
 
-### Follow the video tutorial if you have any doubt 🤩👇
+### Follow the video tutorial to set up the bot 🤩👇
 
 ### ⚠️ Don't clone. It won't work in Local environment. Follow the steps in the video.
 
