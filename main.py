@@ -105,7 +105,7 @@ def webhook():
                         file = genai.upload_file(path=destination,display_name="tempfile")
                         response = model.generate_content(["What is this",file])
                         answer=response._result.candidates[0].content.parts[0].text
-                        convo.send_message(f"Direct image input has limitations, so this message is created by an llm model based on the image prompt of user, reply to the user like you saw that image: {answer}")
+                        convo.send_message(f"Direct image input has limitations, so this message is created by an llm model based on the image prompt of user, reply to the user assuming you saw that image: {answer}")
                         send(convo.last.text)
                         remove(destination)
                 else:send("This format is not Supported by the bot ☹")
@@ -115,7 +115,7 @@ def webhook():
                 response = model.generate_content(["What is this",file])
                 answer=response._result.candidates[0].content.parts[0].text
                 remove("/tmp/temp_image.jpg","/tmp/temp_audio.mp3")
-                convo.send_message(f"Direct media input has limitations, so this is a voice/image message from user which is transcribed by an llm model, reply to the user like you heard/saw media: {answer}")
+                convo.send_message(f"Direct media input has limitations, so this is a voice/image message from user which is transcribed by an llm model, reply to the user assuming you heard/saw media file: {answer}")
                 send(convo.last.text)
                 files=genai.list_files()
                 for file in files:
