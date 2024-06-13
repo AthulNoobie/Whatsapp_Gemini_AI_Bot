@@ -6,6 +6,7 @@ import fitz
 
 wa_token=os.environ.get("WA_TOKEN")
 genai.configure(api_key=os.environ.get("GEN_API"))
+phone_id=os.environ.get("PHONE_ID")
 #The phone number option is removed because, the new version is optimised to detect phone number automatically.
 name="Your name or nickname" #The bot will consider this person as its owner or creator
 bot_name="Give a name to your bot" #This will be the name of your bot, eg: "Hello I am Astro Bot"
