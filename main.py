@@ -109,7 +109,7 @@ def webhook():
                         convo.send_message(f"Direct image input has limitations, so this message is created by an llm model based on the image prompt of user, reply to the user assuming you saw that image: {answer}")
                         send(convo.last.text,sender)
                         remove(destination)
-                else:send("This format is not Supported by the bot ☹")
+                else:send("This format is not Supported by the bot ☹",sender)
                 with open(filename, "wb") as temp_media:
                     temp_media.write(media_download_response.content)
                 file = genai.upload_file(path=filename,display_name="tempfile")
