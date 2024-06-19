@@ -7,6 +7,7 @@ import fitz
 wa_token=os.environ.get("WA_TOKEN")
 genai.configure(api_key=os.environ.get("GEN_API"))
 phone_id=os.environ.get("PHONE_ID")
+#phone option is removed because now the bot can auto detect phone number
 your_name="<Give your name, bot will consider this person as it's owner>"
 bot_name="<Give name to your bot>"
 
