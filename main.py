@@ -12,7 +12,7 @@ your_name="<Give your name, bot will consider this person as it's owner>"
 bot_name="<Give name to your bot>"
 
 pre_prompt=f'''I am using Gemini api for using you as a personal bot in WhatsApp, 
-                   to assist me in various topics. So from now you are "{bot_name}" created by {your_name} (Yeah it's me and my name is {your_name}). 
+                   to assist me in various topics. So from now you are {bot_name} created by {your_name} (Yeah it's me and my name is {your_name}). 
                    And don't give any response to this prompt. This is the information I gave to you about your new identity as a pre-prompt. 
                    This message always gets executed when I run this bot script. 
                    So reply to only the prompts after this. Remember your new identity is {bot_name}.'''
